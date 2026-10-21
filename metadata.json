@@ -1,0 +1,8 @@
+{
+  "name": "Santino Bertino — Accounting & Financial Services",
+  "description": "Professional accounting, financial reporting, budgeting, and business advisory services for SMEs, startups, and NGOs worldwide by Santino Bertino (M.Sc., B.Sc. Accounting).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

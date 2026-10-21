@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-navy: #0B2345;
+    --brand-navy-dark: #07172F;
+    --brand-navy-light: #15396B;
+    --brand-emerald: #087A5B;
+    --brand-emerald-dark: #055A42;
+    --brand-emerald-light: #0FA57D;
+    --brand-gold: #C69A3A;
+    --brand-gold-dark: #9E7925;
+    --brand-gold-light: #E4BC5E;
+    --brand-charcoal: #283342;
+    --brand-canvas: #F5F7FA;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--brand-charcoal);
+    background-color: var(--brand-canvas);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  .font-brand {
+    font-family: 'Cinzel', 'Times New Roman', serif;
+  }
+}
+
+/* Custom Utilities for Financial Boutique Branding */
+.bg-navy-950 { background-color: #07172F; }
+.bg-navy-900 { background-color: #0B2345; }
+.bg-navy-800 { background-color: #15396B; }
+.text-navy-900 { color: #0B2345; }
+.text-navy-800 { color: #15396B; }
+.border-navy-900 { border-color: #0B2345; }
+
+.bg-emerald-700 { background-color: #055A42; }
+.bg-emerald-600 { background-color: #087A5B; }
+.text-emerald-700 { color: #055A42; }
+.text-emerald-600 { color: #087A5B; }
+.border-emerald-600 { border-color: #087A5B; }
+
+.bg-gold-500 { background-color: #C69A3A; }
+.bg-gold-400 { background-color: #E4BC5E; }
+.text-gold-500 { color: #C69A3A; }
+.text-gold-600 { color: #9E7925; }
+.border-gold-500 { border-color: #C69A3A; }
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Smooth glass effect for cards */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(11, 35, 69, 0.08);
+}
+
+.glass-panel-dark {
+  background: rgba(11, 35, 69, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(198, 154, 58, 0.2);
+}
+
+/* Financial Ledger Hairline Pattern */
+.bg-ledger-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(11, 35, 69, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(11, 35, 69, 0.03) 1px, transparent 1px);
+}
